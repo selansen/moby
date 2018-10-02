@@ -99,7 +99,7 @@ func validateDefaultAddrPool(defaultAddrPool []string, size uint32) error {
 	if size == 0 {
 		size = 24
 	}
-	if size > 32 {
+	if size > 29 {
 		return fmt.Errorf("subnet size is out of range: %d", size)
 	}
 	for i := range defaultAddrPool {
